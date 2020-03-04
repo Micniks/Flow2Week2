@@ -49,8 +49,9 @@ document.getElementById("assignment2_button").addEventListener("click", (event) 
 
 setInterval(getQuote("assignment2_7"), 1000 * 60 * 60);
 
-document.getElementById("assignment3").addEventListener("click", (event) => {
-    document.getElementById("assignment3_Result").innerHTML = "Choose a side, you dumbass";
+document.getElementById("svg2").addEventListener("click", (event) => {
+    console.log(event.target.id);
+    document.getElementById("assignment3_Result").innerHTML = "You missed... how?!?";
 });
 
 document.getElementById("north").addEventListener("click", (event) => {
@@ -72,6 +73,7 @@ document.getElementById("south").addEventListener("click", (event) => {
     event.stopPropagation();
     document.getElementById("assignment3_Result").innerHTML = "South was chosen";
 });
+
 
 
 
