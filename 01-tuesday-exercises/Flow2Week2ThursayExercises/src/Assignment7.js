@@ -7,7 +7,8 @@ console.log();
 
 let dragon = {
     attack: function (victim, damage) {
-        console.log(this.name + " the " + this.color + " dragon attacks, breathing " + this.breath + " from above! "
+        console.log(this.name + " the " + this.color 
+                + " dragon attacks, breathing " + this.breath + " from above! "
                 + victim + " takes " + damage + " points of damage!");
     }
 };
@@ -26,9 +27,9 @@ let dragon2 = {
     breath: 'acid'
 };
 
-dragon.attack();                // name = undefined
-dragon.attack.call(dragon1, 'Sam', 9001);    // name = Maryn
-dragon.attack.call(dragon2, 'Viktor', 420);    // name = Draco
+dragon.attack();                                // name = undefined
+dragon.attack.call(dragon1, 'Sam', 9001);       // name = Maryn
+dragon.attack.call(dragon2, 'Viktor', 420);     // name = Draco
 
 
 console.log();
@@ -53,9 +54,9 @@ let dragon4 = {
     breath: 'lightning'
 };
 
-dragon.attack();                // name = undefined
+dragon.attack();                                // name = undefined
 dragon.attack.apply(dragon3, ['Arthur', 1]);    // name = Maryn
-dragon.attack.apply(dragon4, ['Merlin', 0]); // name = Draco
+dragon.attack.apply(dragon4, ['Merlin', 0]);    // name = Draco
 
 
 console.log();
