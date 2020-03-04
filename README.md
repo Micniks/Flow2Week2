@@ -9,17 +9,12 @@ README setup follow guide from https://docs.google.com/document/d/1nWjxWLepoW1-Y
 
 *3. Which of the weekly learnings goals were covered by your solution*
 
-## Monday
------
-1. 
-2. 
-3. 
 
 ## Tuesday
 -----
-1. 
-2. 
-3. 
+1. Completed all assignments, but did not have another classmate to explain the code to.
+2. 01-tuesday-exercises, under /src.
+3. basic functions of javascript.
 
 ## Wednesday
 -----
