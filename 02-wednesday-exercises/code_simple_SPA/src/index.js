@@ -49,11 +49,19 @@ document.getElementById("assignment2_button").addEventListener("click", (event) 
 
 setInterval(getQuote("assignment2_7"), 1000 * 60 * 60);
 
-document.getElementById("svg2").addEventListener("click", (event) => {
-    console.log(event.target.id);
-    document.getElementById("assignment3_Result").innerHTML = "You missed... how?!?";
+document.getElementById("svg2").addEventListener("click", (element) => {
+    if (element.target.id == "svg2") {
+        document.getElementById("assignment3_Result").innerHTML = "You missed... how?!?";
+    } else {
+        document.getElementById("assignment3_Result").innerHTML =
+            element.target.parentNode.id.charAt(0).toUpperCase() + element.target.parentNode.id.substring(1) + " was chosen";
+        // element.target.parentNode.id +  + " was chosen";
+    }
+
 });
 
+
+/*
 document.getElementById("north").addEventListener("click", (event) => {
     event.stopPropagation();
     document.getElementById("assignment3_Result").innerHTML = "North was chosen";
@@ -73,6 +81,7 @@ document.getElementById("south").addEventListener("click", (event) => {
     event.stopPropagation();
     document.getElementById("assignment3_Result").innerHTML = "South was chosen";
 });
+*/
 
 
 
