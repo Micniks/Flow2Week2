@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Person Rest Assignment</h1>
+        
+        <br>
+        <form>
+            <input type="submit" value="Reload Page"> <input id="refreshButton" type="button" value="Refresh Table">
+        </form> 
+        <br>
+        <h3>Add Person: <input id="addButton" type="button" value="Add New User"> <i id="add_Response" style="color: deeppink"> </i></h3>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>List Name</th>
+                <th>Phone</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>Zip</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="addPerson_fName" value="" /></td>
+                <td><input type="text" id="addPerson_lName" value="" /></td>
+                <td><input type="text" id="addPerson_phone" value="" /></td>
+                <td><input type="text" id="addPerson_street" value="" /></td>
+                <td><input type="text" id="addPerson_city" value="" /></td>
+                <td><input type="text" id="addPerson_zip" value="" /></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <div id="personTable"><br></div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

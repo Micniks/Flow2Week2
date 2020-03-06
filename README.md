@@ -19,7 +19,7 @@ README setup follow guide from https://docs.google.com/document/d/1nWjxWLepoW1-Y
 ## Wednesday
 -----
 1. All Done
-2. 02-wednesday-exercises, Assignment 1-3 between code_jsonserver_with_errors & code_simple_SPA, and Assignment 4 between assignment4 & code_simple_SPA.
+2. 02-wednesday-exercises, Assignment 1-3 between code_jsonserver_with_errors & code_simple_SPA, and Assignment 4 between assignment4 & code_jsonserver_with_errors.
 3. AJAX, Fetch, DOM manipulation, small bit of CORS
 
 ## Thursday
