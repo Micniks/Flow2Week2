@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <br>
+    <h2>Assignment 4</h2>
+    <br>
+    <br>
+    <h4>Get Single User</h4>
+    <div>
+      <input id="singleUser_input_txt" type="text" value="">
+      <input id="singleUser_input_button" type="button" value="Get User on ID" />
+      <i id="userList_Size"></i>
+    </div>
+    <div id="singleUser_result">
+      <br><br>
+    </div>
+
+    <h4>Delete User</h4>
+    <div>
+      <input id="deleteUser_input_txt" type="text" value="">
+      <input id="deleteUser_input_button" type="button" value="Delete on ID" />
+    </div>
+    <div id="deleteUser_result">
+      <br>
+    </div>
+    <br> <br>
+    <div>
+      <h4>Add new User</h4><br>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Sex</th>
+          <th>Age</th>
+          <th>Mail</th>
+          <th><input id="newUser_button" type="button" value="Add" /></th>
+        </tr>
+        <tr>
+          <td><input id="newUser_name" type="text" value="" size="20px"></td>
+          <td><input id="newUser_gender" type="text" value="" size="5px"></td>
+          <td><input id="newUser_age" type="text" value="" size="5px"></td>
+          <td><input id="newUser_email" type="text" value="" size="35px"></td>
+        </tr>
+      </table>
+      <div id="newUser_Response">
+        <br>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div>
+      <h4>Edit User</h4><br>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Sex</th>
+          <th>Age</th>
+          <th>Mail</th>
+          <th><input id="editUser_button" type="button" value="Edit" /></th>
+        </tr>
+        <tr>
+          <td><input id="editUser_id" type="text" value="" size="2px"></td>
+          <td><input id="editUser_name" type="text" value="" size="20px"></td>
+          <td><input id="editUser_gender" type="text" value="" size="2px"></td>
+          <td><input id="editUser_age" type="text" value="" size="2px"></td>
+          <td><input id="editUser_email" type="text" value="" size="34px"></td>
+        </tr>
+      </table>
+      <div id="editUser_Response">
+        <br>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <h4>List of All Users</h4>
+    <br>
+    <div id="userList"> </div>
+    <br>
+    <br>
+
+  </div>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
