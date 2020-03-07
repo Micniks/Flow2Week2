@@ -30,6 +30,6 @@ README setup follow guide from https://docs.google.com/document/d/1nWjxWLepoW1-Y
 
 ## Friday
 -----
-1. 
-2. 
-3. 
+1. All Done
+2. 04-friday-exercises, the euro map assignment in code_simple_SPA, and the old project in Flow2Week2_REST_Persons_DTO
+3. All above from the week

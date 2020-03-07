@@ -27,22 +27,22 @@ function addPerson() {
     };
     let option = makeOptions('POST', person);
     let url = 'http://localhost:8080/Flow2Week1/api/person/add';
-    myFetch(url, option, writeError);
+    myFetch(url, option, addPersonResponse);
     document.getElementById("addPerson_fName").value = "";
     document.getElementById("addPerson_lName").value = "";
     document.getElementById("addPerson_phone").value = "";
     document.getElementById("addPerson_street").value = "";
     document.getElementById("addPerson_city").value = "";
     document.getElementById("addPerson_zip").value = "";
-    setTable();
 }
 
-function writeError(data){
-    if(data.message){
+function addPersonResponse(data) {
+    if (data.message) {
         document.getElementById("add_Response").innerHTML = data.message;
     } else {
         document.getElementById("add_Response").innerHTML = "";
     }
+    setTable();
 }
 
 function setTable() {
@@ -55,9 +55,7 @@ function myFetch(url, option, callback) {
     fetch(url, option)
             .then(res => res.json())
             .then(data => {
-                if (callback) {
-                    callback(data);
-                }
+                callback(data);
             });
 }
 
